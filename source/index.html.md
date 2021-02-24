@@ -2,11 +2,11 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - json
   - shell
   - ruby
   - python
   - javascript
+  - json
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -54,6 +54,17 @@ curl "api_endpoint_here" \
 const kittn = require('kittn');
 
 let api = kittn.authorize('meowmeowmeow');
+```
+
+```json
+{
+   "url":"http://api_endpoint_here",
+   "raw_url":"http://api_endpoint_here",
+   "method":"get",
+   "headers":{
+      "Authorization":"meowmeowmeow"
+   }
+}
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
